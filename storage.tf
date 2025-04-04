@@ -27,7 +27,7 @@ resource "azurerm_resource_group" "new_rg" {
 
 # Creating a Storage Account with a new name 
 resource "azurerm_storage_account" "new_storage" {
-  name                     = "raghav_saxena_storage"
+  name                     = "raghavsaxenastorage"
   resource_group_name      = azurerm_resource_group.new_rg.name
   location                 = azurerm_resource_group.new_rg.location
   account_tier             = "Standard"
