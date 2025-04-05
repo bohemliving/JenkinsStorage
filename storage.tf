@@ -10,8 +10,8 @@ terraform {
 
 # configuring  the Azure Provider
 provider "azurerm" {
-  subscription_id = "8cd818a3-1004-4d7d-b2d2-4e45880cd697"
-  tenant_id       = "2e71ef43-0795-4b46-889b-4d6ca854b64d"
+  subscription_id = "ec4470c8-6273-43aa-afa1-56aa423b2431"
+  tenant_id = "6c6b8257-3ffb-4bbc-bda6-010cccbb9a60"
 
   features {
 
@@ -27,7 +27,7 @@ resource "azurerm_resource_group" "new_rg" {
 
 # Creating a Storage Account with a new name 
 resource "azurerm_storage_account" "new_storage" {
-  name                     = "raghavsaxenastorage"
+  name                     = "new_storage"
   resource_group_name      = azurerm_resource_group.new_rg.name
   location                 = azurerm_resource_group.new_rg.location
   account_tier             = "Standard"
